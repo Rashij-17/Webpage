@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Grid Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eff4ed;
+    }
+
+    header {
+      background-color: #588157;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card .desc {
+      padding: 15px;
+      font-size: 1rem;
+      color: #444;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Achievements of Alumni
+  </header>
+
+  <div class="container">
+    <div class="grid">
+
+
+      <div class="card">
+        <img src="rishabh.jpg" alt="Image 1" />
+        <div class="desc">
+            Mr.Rishabh Raj jain <br> 
+            Alumni B.Tech CSE (2018)<br>
+            Rank in UPSC CSE:377<br>
+            IRS Officer
+        </div>
+      </div>
+
+      <!-- Image Card 2 -->
+      <div class="card">
+        <img src="surmaya.jpg" alt="Image 2" />
+        <div class="desc">
+            Miss.Suramya Sharma <br> 
+            Alumni B.Tech CSE (2020)<br>
+            Rank in UPSC CSE:281<br>
+            IRS Officer
+        </div>
+      </div>
+      <div class="card">
+        <img src="vaibhav.png" alt="Image 2" />
+        <div class="desc">
+            Mr.Vaibhav Sharma <br> 
+            Alumni B.Tech ECE (2017)<br>
+            Rank in UPSC CSE:58<br>
+            IAS Officer
+        </div>
+      </div>
+      <div class="card">
+        <img src="riya.webp" alt="Image 2" />
+        <div class="desc">
+            Miss.Ria Ristagi <br> 
+            Alumni B.Tech ECE (2015)<br>
+            co-founder and ceo of Neuphony<br>
+            listed in 2023
+        </div>
+      </div>
+      <div class="card">
+        <img src="rahil.jpg" alt="Image 2" />
+        <div class="desc">
+            Mr.Rahil Gupta <br> 
+            Alumni B.Tech ECE (2017)<br>
+            co-founder, Hop electric mobility<br>
+            listed in 2024
+        </div>
+      </div>
+      <div class="card">
+        <img src="archit.jpg" alt="Image 2" />
+        <div class="desc">
+            Mr.Archit Chauhan <br> 
+            Alumni B.Tech CSE (2018)<br>
+            co-founder,Crib<br>
+            listed in 2024
+        </div>
+      </div>
+      <div class="card">
+        <img src="sarthak.jpg" alt="Image 2" />
+        <div class="desc">
+            Mr.Sarthak Bakshi <br> 
+            Alumni B.Tech CSE (2009)<br>
+            co-founder,RISAA IVF<br>
+            listed in 2017
+        </div>
+      </div>
+      <div class="card">
+        <img src="jaspreet.jpg" alt="Image 2" />
+        <div class="desc">
+            Mr.Jaspreet Makkar <br> 
+           Batch of 2013<br>
+           Founder,Visual AI<br>
+        </div>
+      </div>
+      <div class="card">
+        <img src="dhwuv.jpg" alt="Image 2" />
+        <div class="desc">
+            Mr.Dhruv Bharadwaj <br> 
+           Batch of 2013<br>
+           Software developer<br>
+           AMAZON<br>
+        </div>
+      </div>
+      <div class="card">
+        <img src="devyani.jpg" alt="Image 2" />
+        <div class="desc">
+            Miss.Devyani Gera <br> 
+            Batch of 2015<br>
+           Software Engineer<br>
+           MIRCOSOFT<br>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ravi.jpg" alt="Image 2" />
+        <div class="desc">
+            Mr.Ravi Rawat <br> 
+           Batch of 2018<br>
+           Frankfurt school of Finance and management
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
