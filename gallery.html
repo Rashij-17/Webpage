@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Grid Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #abc476cb;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+      text-transform: capitalize;
+      text-shadow: #555;
+      text-decoration-color: #555;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px,2fr));
+      gap: 100px;
+    }
+
+    .grid-item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+
+    .grid-item:hover {
+      transform: scale(1.02);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <h1><u>JIIT- Alumni meet Photo Gallery</u></h1>
+  <br>
+  <br>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="alumni1.jpg" alt="Image 1">
+    </div>
+    <div class="grid-item">
+      <img src="alumni2.jpg" alt="Image 2">
+    </div>
+    <div class="grid-item">
+      <img src="alumni3.jpg" alt="Image 3">
+    </div>
+    <div class="grid-item">
+      <img src="alumni4.jpg" alt="Image 4">
+    </div>
+    <div class="grid-item">
+      <img src="alumni5.jpg" alt="Image 5">
+    </div>
+     <div class="grid-item">
+      <img src="alumni6.jpg" alt="Image 6">
+    </div>
+     <div class="grid-item">
+      <img src="alumni7.jpg" alt="Image 7">
+    </div>
+     <div class="grid-item">
+      <img src="alumni8.jpg" alt="Image 8">
+    </div>
+     <div class="grid-item">
+      <img src="alumni9.jpg" alt="Image 9">
+    </div>
+     <div class="grid-item">
+      <img src="alumni10.jpg" alt="Image 10">
+    </div>
+    <div class="grid-item">
+      <img src="alumni11.jpg" alt="Image 11">
+    </div>
+    <div class="grid-item">
+      <img src="alumni12.jpg" alt="Image 12">
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>
